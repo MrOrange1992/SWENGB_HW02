@@ -40,7 +40,12 @@ public class Parallelogramm extends ZweiDimensional
 
     //METHODS
     //------------------------------------------------------------------------------------------------------------------
-    public double calculateArea() { return this.sideA * this.sideB * Math.sin(this.angle); }
+    public double calculateArea()
+    {
+        double area = this.sideA * this.sideB * Math.sin(this.angle);
+        if (area < 0) return area * -1;
+        else return area;
+    }
     public double calculatePerimeter() { return 2 * this.sideA + 2 * this.sideB; }
     //------------------------------------------------------------------------------------------------------------------
 

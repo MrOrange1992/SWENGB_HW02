@@ -61,13 +61,13 @@ public class Main
         list.add(new Dreieck(1,1,5,4));
         list.add(new Dreieck(1,1,2,6));
 
-        list.add(new Parallelogramm(1,1,10,10,70));
-        list.add(new Parallelogramm(1,1,10,12,83));
-        list.add(new Parallelogramm(1,1,6,8,76));
+        list.add(new Parallelogramm(1,1,10,10,80));
+        list.add(new Parallelogramm(1,1,10,12,85));
+        list.add(new Parallelogramm(1,1,6,8,75));
 
-        list.add(new Raute(1, 1, 6, 70));
-        list.add(new Raute(1, 1, 8, 72));
-        list.add(new Raute(1, 1, 14, 76));
+        list.add(new Raute(1, 1, 6, 80));
+        list.add(new Raute(1, 1, 8, 85));
+        list.add(new Raute(1, 1, 14, 75));
     }
 
     private void fill3DimList(List<DreiDimensional> list)

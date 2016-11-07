@@ -37,7 +37,12 @@ public class Raute extends ZweiDimensional
 
     //METHODS
     //------------------------------------------------------------------------------------------------------------------
-    public double calculateArea() { return Math.pow(this.sideA, 2) * Math.sin(angleA); }
+    public double calculateArea()
+    {
+        double area = Math.pow(this.sideA, 2) * Math.sin(angleA);
+        if (area < 0) return area * -1;
+        else return area;
+    }
     public double calculatePerimeter() { return 4 * this.sideA; }
     //------------------------------------------------------------------------------------------------------------------
 
